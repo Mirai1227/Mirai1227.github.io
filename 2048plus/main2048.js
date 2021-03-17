@@ -247,9 +247,9 @@ document.addEventListener('touchend',function(event){
 });
 
 //如果手指滑动无响应，是遇到工程上的bug了！
-// document.addEventListener('touchmove',function(event){
-//     event.preventDefault();
-// });
+document.addEventListener('touchmove',function(event){
+     event.preventDefault();
+});
 
 function isgameover() {
     if ( nospace(board) && nomove(board)) {//棋盘上没有空间或者不能进行任何移动操作
